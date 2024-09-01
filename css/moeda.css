@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #63636b;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+#img img {
+    width: 25rem;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: #262626;
+    background-color: #f8fafc;
+    border-radius: 8px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#title {
+    font-size: 2.25rem;
+    position: relative;
+}
+
+#title::after {
+    position: absolute;
+    content: '';
+    width: 8rem;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #262626;
+    bottom: 0;
+    left: 0;
+}
+
+.input-box label {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cbd5e1;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.input-field span,  
+.input-field i {
+    color: #000307;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+.input-field input,
+.input-field select {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #000000;
+    padding: 0 0.5rem;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+ appearance: none;
+}
+
+.input-field input:focus,
+.input-field select:focus {
+    outline: none;
+}
+
+.input-field select::-ms-expand {
+    display: none; 
+}
+
+#calculate {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f8fafc;
+    background-color: #4574f5;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    gap:2rem;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

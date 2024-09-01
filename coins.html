@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/moeda.css" rel="stylesheet">
+    <title>Conversor de Moedas</title>
+    <script src="js/moeda.js" async></script> 
+</head>
+<body>
+    <main id="container">
+        <section id=" img">
+            <img src="images/ilustra.svg">
+        </section>    
+
+        <section id="calculator">
+            <label id="label">
+                <h1 id="title">
+                    Conversor de moeda
+                </h1>
+
+                <div class="input-box">
+                    <label for="de">
+                        De:
+                    </label>  
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                    <select name="deMoeda" id="deMoeda" required>
+                            <option value="">Selecione...</option>
+                            <option value="BRL">Real Brasileiro</option>
+                            <option value="USD">Dolar Americano</option>
+                            <option value="EUR">Euro</option>
+                            <option value="MXN">Peso Mexicano</option>
+                            <option value="CNY">Yuan Chinês</option>
+                            <option value="BTC">Bitcoin</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                        <label for="para">
+                            Para:
+                        </label>  
+                        <div class="input-field">
+                            <i class="fa-solid fa-weight-hanging"></i>
+                        <select name="ParaMoeda" id="ParaMoeda" required>
+                                <option value="">Selecione...</option>
+                                <option value="BRL">Real Brasileiro</option>
+                                <option value="USD">Dolar Americano</option>
+                                <option value="EUR">Euro</option>
+                                <option value="MXN">Peso Mexicano</option>
+                                <option value="CNY">Yuan Chinês</option>
+                        </select>
+                        </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="valor">
+                        Valor: 
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="text" name="valor" id="valor" autofocus>
+                    </div>
+                </div>
+
+                
+                    <label for="valorE">
+                        ‎ 
+                    </label>
+                    <div class="input-fieldE">
+
+                    </div>
+               
+
+                <button id="calculate">
+                    Converter
+                </button>
+                <p id="saida"></p>
+            </label>
+        </section>
+    </main>  
+</body>
+</html>
